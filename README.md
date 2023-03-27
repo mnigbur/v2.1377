@@ -3,8 +3,10 @@
 - [Voron 2.4 (300mm³)](#voron-24-300mm)
 - [Input Shaper](#input-shaper)
 - [Update Klipper](#update-klipper)
-  - [RPi](#rpi)
-  - [Spider](#spider)
+  - [Automatic update script](#automatic-update-script)
+  - [Manual settings](#manual-settings)
+    - [RPi](#rpi)
+    - [Spider](#spider)
 
 <br/><br/>
 
@@ -17,9 +19,17 @@
 
 # Update Klipper
 
-## RPi
+## Automatic update script
 
 ```bash
+$ ~/klipper_config/script/update_mcu.sh
+```
+
+## Manual settings
+
+### RPi
+```bash
+$ cd ~/klipper
 $ make menuconfig
 ```
 
@@ -36,8 +46,9 @@ $ make flash
 $ sudo service klipper start
 ```
 
-## Spider
+### Spider
 ```bash
+$ cd ~/klipper
 $ make menuconfig
 ```
 
