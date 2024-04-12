@@ -17,8 +17,7 @@ function flash_mcu() {
       ./scripts/flash-sdcard.sh /dev/ttyAMA0 fysetc-spider-v1
       ;;
     ercf)
-      echo "Aborting! Please verify serial device!"
-      #sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM1 -e -w -v -R --offset=0x2000 out/klipper.bin
+      sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM0 -e -w -v -R --offset=0x2000 out/klipper.bin
     ;;
   esac
   echo "Finish update mcu $1"
