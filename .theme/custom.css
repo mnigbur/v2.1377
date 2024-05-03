@@ -1,6 +1,7 @@
 /* .
 This is a dark-mode theme for mainsail
 including Voron Toolheads and red and black accent colors
+
 */
 
 :root {
@@ -28,18 +29,13 @@ including Voron Toolheads and red and black accent colors
 
 .v-application .warning {
     background-color: #ff5252 !important;
-    border-color: #ff5252;
+    border-color: #ff5252 !important;
 }
 
 .v-application .primary {
     background-color: black !important;
 }
 
-.v-application .text-body-2, .v-application .text-button {
-    font-size: .875rem!important;
-    font-family: Roboto,sans-serif!important;
-    color: black;
-}
 
 /* Change Color of text */
 .v-btn__content .v-toolbar__title {
@@ -58,6 +54,9 @@ including Voron Toolheads and red and black accent colors
     color: var(--Text) !important;
 }
 .v-application .blue--text {
+    color: var(--Text) !important;
+}
+.text-body-2 {
     color: var(--Text) !important;
 }
 
@@ -158,10 +157,6 @@ body {
     content: "\F0622"
 }
 
-/* Send arrow to telegram arrow */
-.mdi-send:before {
-    content: "\F0501"
-}
 
 /* console to boxed console */
 .mdi-console-line:before {
@@ -186,4 +181,9 @@ body {
 /* Printer Dashboard to 3d Printer */
 .mdi-view-dashboard-outline:before {
     content: "\F042B";
+}
+
+/* Question-mark to Information/About */
+.mdi-help-circle-outline:before {
+    content: "\F02FD";
 }
