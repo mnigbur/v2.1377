@@ -2,3 +2,6 @@ printer-*
 .variables.cfg
 mooncord.json
 K-ShakeTune_results/
+
+.theme/
+timelapse/
